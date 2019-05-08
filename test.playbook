@@ -1,0 +1,5 @@
+---
+ - hosts: appserver
+   tasks:
+     - name: test
+       shell: ls -ltr
