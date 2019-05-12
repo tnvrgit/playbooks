@@ -1,5 +1,4 @@
 ---
  - hosts: appserver
-   tasks:
-     - name: test
-       shell: ls -ltr && pwd
+   roles:
+     - uninstall_apache
