@@ -1,2 +1,5 @@
 ---
 # tasks file for apache
+- tasks:
+  name: install apache
+  shell: pwd && ls
