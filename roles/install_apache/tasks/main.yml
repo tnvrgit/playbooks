@@ -1,5 +1,9 @@
 ---
 # tasks file for apache
-- tasks:
-  name: install apache
+- name: install apache
   shell: pwd && ls
+  register: result
+  
+- name: debug result
+  debug:
+    msg: " {{ result }} "
